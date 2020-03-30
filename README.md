@@ -1,14 +1,45 @@
 # Manipulation de données/tableaux en JS
 
-## Les exercices ont tous la même base
+>**Objectif pédagogique:**
+> Les exercices suivants ont pour but d'apprendre à utiliser les méthodes natives des tableaux en JS.
 
-- un fichier `cities.js` qui contient des données sur les communes françaises
-- un fichier `script.js` dans lequel vous allez travailler
-- un fichier HTML qui charge ces deux fichiers dans votre navigateur
+## Exercice 2.1
 
-Vous avez ensuite accès à une variable `cities` qui est un tableau contenant des infos sur les communes françaises.
+Vous avez probablement, dans l'exercice 1, utilisé une boucle `for` pour itérer sur le tableau et un `if` pour parvenir au résultat demandé. Et, afin de trier, copié les données dans un tableau intermédiaire.
 
-## Pour commencer
+Trouvez des informations sur les fonctions `Array.filter` et `Array.forEach` et refaire l'exercice en utilisant ces fonctions.
 
-Chaque exercice est dans une branche.
-Pour commencer, basculez avec git sur la branche `exo-1`
+_En cas de difficulté, commencez par afficher la liste non triée._
+
+[Array.filter sur MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter)
+[Array.forEach sur MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach)
+
+> **Note:** Ce style de programmation s'appelle la programmation fonctionnelle. Nous n'allons qu'effleurer le sujet, mais cela nous permettra d'écrire du code beaucoup plus court et compréhensible et donc, au final, plus facile à maintenir.
+
+
+## Exercices 2.2
+
+Il est important, pour la clarté du code, de créer des petites fonctions autonomes qui ne font qu'une chose mais bien.
+
+Nous allons donc commencer par extraire la partie qui parcourt la liste filtrée.
+
+1. Écrivez une fonction `getCitiesByDept` qui prend en *paramètre* un code de département et retourne un tableau avec uniquement les communes de ce département
+2. Utilisez cette fonction pour afficher dans la console le nom des villes de Haute-Savoie
+
+
+## Exercice 2.3
+
+Maintenant nous allons extraire la partie qui formate les données pour l'affichage.
+
+1. Écrivez une fonction `displayCity` qui prend en paramètre les données d'une commune, c'est à dire un élément du tableau `cities` ou `getCitiesByDept`, et retourne sous forme de chaîne de caractères `"xx - nom de la ville"`.
+2. En utilisant les fonctions précédentes, affichez la liste de villes de Haute-Savoie dans la console.
+
+
+
+## Ensuite...
+
+Faire valider par le formateur.
+
+Copiez-coller les méthodes `getCommungetCitiesByDeptesByDept` et `displayCity`, vous en aurez besoin pour les exercices suivants.
+
+Puis basculez sur la branche `exo-3`.
