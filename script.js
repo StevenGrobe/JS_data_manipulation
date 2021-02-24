@@ -9,3 +9,10 @@ function ready(callback) {
 }
 
 // insérer votre code ci-dessous
+function main() {
+  const el = document.createElement('div');
+  el.innerHTML = 'Je suis un div';
+  document.body.appendChild(el);
+}
+
+ready(main);
