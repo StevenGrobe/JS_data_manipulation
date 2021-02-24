@@ -8,10 +8,13 @@ console.log(newArray)
 
 function getCitiesByDept (codePostal) {
     let codePostalArray = cities.filter((element) => element.codeDepartement == codePostal)
-    for (let i = 0; i < codePostalArray.length; i++) {
-        console.log(codePostalArray[i].nom);
-    }
-};
+    codePostalArray.forEach((element) => {
+        console.log(displayCity(element));
+    });
+}
+
+function displayCity (city) {
+        return `${city.codeDepartement} - ${city.nom}` 
+}
 
 getCitiesByDept(74);
-
