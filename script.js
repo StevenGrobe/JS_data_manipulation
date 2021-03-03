@@ -5,7 +5,7 @@ function getCitiesPopSup300000() {
     const cityArray = cities.filter((city) => city.population > 300000)
     console.log(cityArray);
     cityArray.sort(function (prev, curr) {
-        return prev.population - curr.population;
+        return curr.population - prev.population;
     });
 }
 
